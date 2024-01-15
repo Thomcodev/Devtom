@@ -1,0 +1,380 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+ 
+    
+}
+body {
+   font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center;
+    
+    
+}
+
+.header {
+    background-color: #1B70A6;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.header h1{
+   font-size: 30px;
+   align-items: center;
+   margin-left: 50px;
+   margin-top: 100px;
+   color: white;
+}
+.logo-header {
+   width: 190px; 
+   height: auto; 
+}
+
+/* --- Estilos de menú --- */
+.menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   padding: 0 40px;
+   background-color: #FFFFFF;
+   z-index: 100;
+}
+
+.navbar {
+   display: flex;
+   justify-content: flex-start;
+}
+
+/* --- Estilos para botones --- */
+
+
+/* --- Estilos para redes sociales --- */
+.socials-1 img {
+   width: 20px;
+   margin-right: 15px;
+}
+
+.icono-salida {
+   display: inline-block;
+   width: 20px;  /* Ajusta según el tamaño deseado para el ícono */
+   height: 24px;
+   margin: 0 10px;  /* Ejemplo de margen */
+   /* ... otros estilos que desees ... */
+}
+
+.icono-salida img {
+   max-width: 100%;
+   height: auto;
+   /* ... otros estilos que desees para la imagen dentro del ícono ... */
+}
+
+
+
+ 
+
+ p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+    text-align: left;
+ }
+
+
+
+ .btn-1{
+    display: inline-block;
+    padding: 13px 30px;
+    background-color:#F2B705;
+    color: aliceblue;
+    border-radius: 25px;
+    font-size: 18px;
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .btn-1:hover{
+    background-color:orange;
+ }
+
+
+
+form {
+   margin-top: 80px;
+   background-color: white;
+}
+
+label, select {
+   display: block;
+   margin-bottom: 10px;
+   margin-top: 20px;
+}
+
+input[type="submit"] {
+   background-color: #403A38;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+
+
+label {
+   color: #333; /* Color oscuro para las etiquetas */
+   font-weight: bold; /* Letras en negrita */
+}
+
+button {
+   background-color: #D99484; /* Color de fondo del botón */
+   color: #fff; /* Color de texto del botón */
+   padding: 10px 20px; /* Espaciado interno del botón */
+   border: none; /* Remover el borde predeterminado */
+   cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre el botón */
+   border-radius: 5px; /* Bordes redondeados del botón */
+   transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Estilo para el botón al pasar el mouse sobre él */
+button:hover {
+   background-color: #b47a6f; /* Color de fondo más oscuro al pasar el mouse sobre el botón */
+}
+  
+  
+
+ 
+  
+  
+.footer {
+   width: 100%;
+   background-color: #1B70A6;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 0;
+   height: 200px;
+   margin-top: 50px;
+}
+
+.copyright {
+   text-align: left;
+   width: 90vw;
+   max-width: 1200px;
+   order: 2;
+}
+
+.footer-socials {
+   width: 90vw;
+   max-width: 1200px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.footer a {
+   color: #fff;
+   text-decoration: none;
+   margin: 0 15px;
+}
+
+.footer img {
+   width: 25px;
+   height: 25px;
+}
+
+  .result-image {
+    width: 200px;  /* o el tamaño que desees */
+    display: block;
+    margin: 20px auto;  /* centrado horizontal y con espacio superior/inferior */
+}
+
+.logo-circle {
+   width: 90px; 
+   height: 90px; 
+   border-radius: 50%; 
+   overflow: hidden;
+   display: flex; /* Cambia a flex */
+   align-items: center; /* Centra verticalmente */
+   justify-content: center; /* Centra horizontalmente */
+   background-color: #ffffff;
+   box-sizing: border-box;
+   margin-right: 20px;
+}
+
+
+.logo-circle img {
+   width: 60%; /* Esta línea hace que la imagen del logo sea más pequeña que el círculo contenedor */
+   height: auto;
+   display: block;
+   margin: auto; /* Esto centra la imagen dentro del círculo */
+}
+
+#medidor {
+   width: 50px;
+   height: 400px;
+   background-color: #f0f0f0;
+   position: relative;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 0;
+   margin: 0;
+
+   display: inline-block; /* Para que se pueda alinear junto a la flecha */
+   vertical-align: bottom; /* Alinear la parte inferior con otros elementos inline */
+
+   background: linear-gradient(to top,
+    green 0%,       /* Estos altibajos son considerados normales */
+    green 24%,      /* Puntuación: 0 - 10 */
+    yellow 25%,     /* Leve perturbación del estado de ánimo */
+    yellow 39%,     /* Puntuación: 10 - 16 */
+    orange 40%,     /* Estados de depresión intermitentes */
+    orange 49%,     /* Puntuación: 16 - 20 */
+    darkorange 50%, /* Depresión moderada */
+    darkorange 74%, /* Puntuación: 20 - 30 */
+    red 75%,        /* Depresión grave */
+    red 89%,        /* Puntuación: 30 - 40 */
+    darkred 90%     /* Depresión extrema */
+);
+
+}
+
+
+#flecha {
+   width: 0;
+   height: 0;
+  
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent;
+   border-right: 20px solid blue; 
+   position: absolute;
+   left: 65px; /* Colocar la flecha a la derecha del medidor */
+}
+
+
+
+.logo-circle {
+   width: 90px; 
+   height: 90px; 
+   border-radius: 50%; 
+   overflow: hidden;
+   display: flex; /* Cambia a flex */
+   align-items: center; /* Centra verticalmente */
+   justify-content: center; /* Centra horizontalmente */
+   background-color: #ffffff;
+   box-sizing: border-box;
+   margin-right: 20px;
+}
+
+
+.logo-circle img {
+   width: 60%; /* Esta línea hace que la imagen del logo sea más pequeña que el círculo contenedor */
+   height: auto;
+   display: block;
+   margin: auto; /* Esto centra la imagen dentro del círculo */
+}
+
+.legend {
+   margin-left: 50px;   /* Esto crea el espacio entre la barra y la leyenda. Ajusta según necesites. */
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.color-key {
+   width: 20px;
+   height: 20px;
+   margin-bottom: 5px;
+   border: 1px solid #ccc;
+   border-radius: 50%;
+}
+
+.legend p {
+   font-size: 14px;
+   margin-bottom: 15px;
+}
+
+section {
+   display: flex;
+   align-items: center; /* Centra verticalmente los elementos hijos */
+   justify-content: space-between; /* Espacio entre los contenedores hijos */
+   padding: 20px;
+}
+
+.medidor-container, .legend-container {
+   flex: 1; /* Ocupa todo el espacio disponible de manera equitativa */
+   padding: 10px; /* Añade algo de padding alrededor para separar los elementos */
+}
+
+.legend table {
+   border-collapse: collapse; 
+   width: 100%;
+  
+  
+}
+
+.legend td {
+   padding: 8px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+.color-key {
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   vertical-align: middle;  /* Centrar verticalmente con el texto */
+   border: 1px solid #ccc;
+   border-radius: 50%;
+}
+
+/* Eliminar el borde del último elemento */
+.legend tr:last-child td {
+   border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

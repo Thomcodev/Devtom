@@ -1,0 +1,353 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Instrument+Serif&family=Poppins:wght@100&family=Volkhov&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/* Typography Adjustments */
+
+.header {
+    min-height: 10vh;
+}
+
+.container-fluid .navbar-brand .logo-header {
+    width: 100px; 
+    height: auto; 
+}
+ #menu .nav a{
+    font-family: 'Abhaya Libre', serif;
+    color: #181E4B; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none; /* Elimina la subrayado predeterminado */
+    font-weight: bold;
+   
+ }
+
+ #menu .nav li {
+    margin: 0 10px; 
+    font-size: 20px;/* Espaciado entre elementos de la lista */
+}
+
+
+#button {
+    border: 1px solid #F27405;
+   
+    padding: 5px 5px;
+}
+
+#button:hover {
+    color: white;
+    background-color: #F27405;
+    border: 1px solid black;
+}
+
+#inicio section{
+    padding-top: 20px;
+}
+
+
+
+
+ #primero p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem; /* Clase 'fs-5' de Bootstrap para tamaño de texto */
+    font-weight: bolder;
+    color: #F27405;
+    padding-top: 160px;
+    padding-left: 100px;
+    margin-top: 0%;
+}
+
+
+
+ #segundo p {
+    font-family: 'Volkhov', serif;
+    font-size: 2.5rem; /* Clase 'fs-5' de Bootstrap para tamaño de texto */
+    font-weight: bolder;
+    color: #181E4B;
+    padding-left: 100px;
+    
+    
+}
+
+
+#tercero p {
+    font-family: 'Volkhov', serif;
+    font-size: 1rem; /* Clase 'fs-5' de Bootstrap para tamaño de texto */
+    font-weight: bolder;
+    color: #5E6282;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    #primero p,
+    #segundo p,
+    #tercero p {
+        padding-left: 20px; /* Ajusta el padding izquierdo para dispositivos más pequeños */
+    }
+}
+
+#button-saber-mas a {
+    background-color: #F27405;
+    color: white;
+    border: 1px solid #F27405;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.saber-mas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+    margin-top: 120px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Asegura que el SVG no se desborde del contenedor */
+}
+
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+#Categoria {
+    margin-bottom: 20px; /* Agrega un espacio entre "Categoria" y las tarjetas */
+}
+
+.saber-mas p {
+    font-size: 20px;
+    color: #F27405;
+}
+
+.saber-mas h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #181E4B;
+    margin-top: 10px;
+}
+
+/* Estilos para las tarjetas */
+.saber-mas .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.saber-mas .card1,
+.saber-mas .card2,
+.saber-mas .card3,
+.saber-mas .card4 {
+    max-width: 180px;
+    width: 90%;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.saber-mas .card1 .card-header,
+.saber-mas .card2 .card-header,
+.saber-mas .card3 .card-header,
+.saber-mas .card4 .card-header{
+    min-height: 80px;
+
+}
+/* Estilos para el cuerpo de las tarjetas */
+.saber-mas .card1 .card-body,
+.saber-mas .card2 .card-body,
+.saber-mas .card3 .card-body,
+.saber-mas .card4 .card-body {
+    font-size: 20px;
+    color: #1E1D4C;
+    padding-bottom: 5px;
+    min-height: 50px;
+}
+
+/* Estilos para el pie de las tarjetas */
+.saber-mas .card1 .card-footer,
+.saber-mas .card2 .card-footer,
+.saber-mas .card3 .card-footer,
+.saber-mas .card4 .card-footer {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5E6282;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+  .saber-mas .card-header img{
+    max-width: 60px;
+    width: 90%;
+   
+    
+  }
+
+
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0; /* Ajusta el relleno según tus necesidades */
+    margin-top: 120px;
+}
+
+#Categoria {
+    margin-bottom: 20px; /* Agrega un espacio entre "Categoria" y las tarjetas */
+}
+
+
+
+.quienes-somos p {
+    font-size: 20px;
+    color: #F27405;
+}
+.quienes-somos .contenido{
+    width: 800px;
+}
+.quienes-somos .contenido p{
+    color: #5E6282;
+    
+    align-content: center;
+}
+
+.quienes-somos h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #181E4B;
+    margin-top: 10px;
+}
+
+.quienes-somos .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.quienes-somos .card101,
+.quienes-somos .card202,
+.quienes-somos .card303 {
+    max-width: 180px;
+    width: 90%;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.quienes-somos .card101 .card-header,
+.quienes-somos .card202 .card-header,
+.quienes-somos .card303 .card-header{
+    min-height: 80px;
+
+}
+/* Estilos para el cuerpo de las tarjetas */
+.quienes-somos .card101 .card-body,
+.quienes-somos .card202 .card-body,
+.quienes-somos .card303 .card-body {
+    font-size: 20px;
+    color: #1E1D4C;
+    padding-bottom: 5px;
+    min-height: 50px;
+}
+
+/* Estilos para el pie de las tarjetas */
+.quienes-somos .card101 .card-footer,
+.quienes-somos .card202 .card-footer,
+.quienes-somos .card303 .card-footer{
+    font-size: 12px;
+    font-weight: bold;
+    color: #5E6282;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+  .quienes-somos .card-header img{
+    max-width: 150px;
+    width: 90%;
+   
+    
+  }
+
+  footer {
+    display: block;
+}
+  .footer-footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+}
+.principal{
+    width: auto;
+}
+.div-primero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo-footer {
+    max-width: 100px;
+}
+
+
+
+.socials-1 img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+
+
+#frase {
+    margin-top: 20px;
+}
+
+#derechos {
+    margin-top: 20px;
+    color: #777;
+}

@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Variables for Color Palette */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #B4BFC6;
+    --highlight-color: #E74C3C;
+    --light-bg: #ECF0F1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif; /* Using a more neutral font for content */
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+}
+
+/* Typography Adjustments */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.header {
+    flex: none;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.logo-header {
+    width: 100px; 
+    height: auto; 
+}
+
+/* --- Estilos de menú --- */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 40px;
+    background-color: aliceblue;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* --- Estilos para botones --- */
+.botones {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.btn-sesion {
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 0 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #26B0BF;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-sesion:hover {
+    color: white;
+    background-color: #1B70A6;
+}
+
+/* --- Estilos para redes sociales --- */
+.socials-1 img {
+    width: 20px;
+    margin-right: 15px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    font-size: 14px; /* Ajusta este valor según tus necesidades */
+}
+
+.navbar ul li {
+    padding: 5px 10px; /* Ajusta estos valores según tus necesidades */
+}
+
+
+.navbar a {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.icono-salida, .socials-1 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Adjusting other styles */
+/* ... your existing styles ... */
+
+/* Adjustments to testimonial */
+.testimony__body {
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+ 
+    
+  /* Estilo general para la sección de testimonios */
+#testimonios {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    position: relative;
+}
+
+/* Estilo para el contenedor de cada testimonio */
+.testimony__body {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.testimony__body:hover {
+    transform: scale(1.03); 
+}
+
+/* Estilo para las imágenes de los testimonios */
+.testimony__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Estilo para el texto de los testimonios */
+.testimony__texts {
+    flex: 1;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimony__review {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo para las flechas del slider */
+.testimony__arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.testimony__arrow:hover {
+    opacity: 1;
+}
+
+/* Posicionando las flechas */
+#before {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.icono-salida {
+    display: inline-block;
+    width: 24px;  /* Ajusta según el tamaño deseado para el ícono */
+    height: 24px;
+    margin: 0 10px;  /* Ejemplo de margen */
+    /* ... otros estilos que desees ... */
+}
+
+.icono-salida img {
+    max-width: 100%;
+    height: auto;
+    /* ... otros estilos que desees para la imagen dentro del ícono ... */
+}
+
+
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para la sección "about" */
+
+.about {
+    background-color: #fff; /* Fondo blanco */
+    padding: 60px 0; 
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555; /* Un gris oscuro para un contraste suave */
+    text-align: left;
+}
+
+/* Sección Información */
+.information {
+    background-color: #f5f9fd; /* Color de fondo más claro que el body */
+    padding: 60px 0; 
+}
+
+.information h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.information p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #3179ba; /* Color de fondo azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px; /* Bordes completamente redondeados para un botón tipo "píldora" */
+    transition: background-color 0.3s;
+}
+
+.btn-2:hover {
+    background-color: #245a85; /* Un azul más oscuro para el hover */
+}
+
+.contenedor {
+    display: grid;
+    place-items: center;  /* Centra en ambas direcciones */
+    height: 10vh;        /* Tomar toda la altura de la ventana */
+}
+/* Estilos para la sección de Testimonios con Slider */
+
+/* Testimony */
+
+
+
+
+.image-section {
+    text-align: center;
+    padding: 40px 20px;  /* Aumenta el padding vertical para más espacio */
+    margin-top: 30px;
+    background-color: white; /* Fondo blanco para que se destaque */
+    border-radius: 8px; /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra sutil para darle profundidad */
+}
+
+.featured-image {
+    width: 95%; /* Ocupa el 95% del ancho disponible de su contenedor */
+    max-width: none; /* Sin límite en el ancho máximo */
+    display: block;
+    margin: 0 auto; /* Centrarla horizontalmente */
+    border-radius: 8px; /* Bordes suavemente redondeados */
+}
+
+/* --- Estilos de pie de página --- */
+/* Estilos para el Footer */
+
+.footer {
+    width: 100%;
+    background-color: #1B70A6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    height: 200px;
+    margin-top: 50px;
+ }
+ 
+ .copyright {
+    text-align: left;
+    width: 90vw;
+    max-width: 1200px;
+    order: 2;
+ }
+ 
+ .footer-socials {
+    width: 90vw;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+ 
+ .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+ }
+ 
+ .footer img {
+    width: 25px;
+    height: 25px;
+ }
+ 
+ .card {
+    width: 90vw;
+    max-width: 500px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin: 2vh auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 75px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-footer {
+    background-color: #1B70A6; /* Puedes ajustar el color de fondo según tus necesidades */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.information-recomendation{
+    margin-top: 30px;
+}
+
+/* --- Estilos para el contenedor del contenido y el aside --- */
+.contenido-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en ambos lados */
+}
+
+/* --- Estilos para la tarjeta --- */
+.card {
+    flex: 1; /* La tarjeta ocupa el espacio restante */
+    max-width: 500px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 75px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+/* --- Estilos para el aside --- */
+aside {
+    flex: 0 0 500px; /* Establece un ancho fijo para el aside */
+    background-color: #f0f0f0; /* Ajusta el color de fondo según tus necesidades */
+    padding: 50px;
+    margin-left: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+#recomendaciones-lista {
+    list-style: none;
+    padding: 0;
+}
+
+#recomendaciones-lista li {
+    cursor: pointer;
+    margin-bottom: 15px; /* Aumenta el espacio entre elementos de la lista */
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    transition: background-color 0.3s ease;
+}
+
+#recomendaciones-lista li:hover {
+    background-color: #d0d0d0;
+}
+
+
+
+#slider {
+    width: 87%; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el slider */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    border-radius: 8px;
+    
+  }
+  
+  
+  #slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .marco-redondo {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    border-radius: 50%; /* Hace que el borde sea redondo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del marco */
+  }
+  
+  .marco-redondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el marco */
+  }

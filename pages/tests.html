@@ -1,0 +1,136 @@
+<?php
+session_start();
+
+// Si el formulario es enviado, procesa los datos
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Aquí procesarías los datos del formulario
+    // Por ejemplo: guardar en la base de datos, etc.
+    // ...
+}
+
+// Recupera el nombre del usuario de la sesión
+$nombreDelUsuario = isset($_SESSION['nombreUsuario']) ? $_SESSION['nombreUsuario'] : '';
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tests.css">
+
+    <title>Test Thómas</title>
+</head>
+<body>
+    
+<header class="header">
+        <header class="menu " >
+            <a  href="#"><img src="../img/1-removebg-preview.png" alt="thómas, aistente virtual" class="logo-header"></a>
+    
+            <nav class="navbar">
+                <ul>
+                   
+                </ul>
+            </nav>
+            
+            
+    
+                    
+               
+
+
+            <div class="socials-1">
+                <a href="../pages/pagina1.php" class="icono-salida"><img src="../img/salida.png" alt="Cerrar sesión"></a>
+                <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt=""></a>
+            </div>
+
+          
+
+        </header>
+        <h1>REALIZA EL TEST DE DEPRESIÓN Y ANSIEDAD</h1>
+    </header>
+    <div class="main-content">
+
+
+    
+    <form class="datos_test">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="civil">Estado Civil:</label>
+        <select id="civil" name="civil">
+            <option value=""></option>
+            <option>Soltero(a)</option>
+            <option>Casado(a)</option>
+            <option>Divorciado(a)</option>
+            <option>Viudo(a)</option>
+            <option>Separado(a)</option>
+            <option>Unión libre</option>
+        </select><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+            <option value=""></option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select><br>
+
+        <label for="ocupacion">Ocupación:</label>
+        <input type="text" id="ocupacion" name="ocupacion"><br>
+
+        <label for="educacion">Educación:</label>
+        <input type="text" id="educacion" name="educacion"><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="container">
+        <div class="card">
+            <img src="../img/depresion.jpg" alt="Descripción de la Imagen 1">
+            
+            <a href="../pages/test_depresion.html" class="card-link"><button>Test de depresión</button></a>
+            
+        </div>
+    
+        <div class="card">
+            <img src="../img/ansiedad.jpg" alt="Descripción de la Imagen 2">
+            <a href="../pages/test_ansiedad.html" class="card-link"><button>Test de ansiedad</button></a>
+            
+        </div>
+
+        <div class="card">
+            <img src="../img/artificial-intelligence.jpg" alt="Descripción de la Imagen 3">
+            <a href="../pages/test_inteligencia.html" class="card-link"><button>Test de inteligencias multiples</button></a>
+            
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="copyright">
+        &copy; 2023 Thómas, Asistente Virtual. Todos los derechos reservados.
+    </div>
+    
+    <div class="footer-socials">
+        <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt="Perfil de Instagram de Thomas Checo"></a>
+        <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt="Perfil de facebook de Thomas Checo"></a>
+        <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt="Perfil de linkedin de Thomas Checo"></a>
+    </div>
+</footer>
+</body>
+</html>

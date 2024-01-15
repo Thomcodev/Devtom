@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test_depresion.css">
+ 
+    <title>Test Thómas</title>
+</head>
+<body>
+    <header class="header">
+        <header class="menu " >
+            <a  href="#"><img src="../img/1-removebg-preview.png" alt="thómas, aistente virtual" class="logo-header"></a>
+           
+    
+            
+            
+
+
+            <div class="socials-1">
+                <a href="../pages/tests.html" class="icono-salida"><img src="../img/salida.png" alt="Cerrar sesión"></a>
+                <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt=""></a>
+            </div>
+
+          
+
+        </header>
+        <h1>Inventario de Depresión de Beck-II (BDI-II).</h1>
+    </header>
+
+<div class="container">
+   
+    
+    <section>
+        <br>
+        <p>Instrucciones: Este cuestionario consta de 21 grupos de afirmaciones. Por favor, lea con atención cada uno de ellos cuidadosamente. Luego elija uno de cada grupo, el que mejor describa el modo como se ha sentido las últimas dos semanas, incluyendo el día de hoy.
+
+            Marque el número correspondiente al enunciado elegido Si varios enunciados de un mismo grupo le parecen igualmente apropiados, marque el número más alto. </p>
+        <p>Todos los campos son obligatorios.</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <form id="depressionTest" action="./test_depresion.php" method="post" novalidate>
+           
+
+            
+            <div class="question">
+                <label for="q1">1. Tristeza</label><br/>
+                <input type="radio" name="q1" value="0" required> No me siento triste<br/>
+                <input type="radio" name="q1" value="1"> Me siento triste gran parte del tiempo<br/>
+                <input type="radio" name="q1" value="2"> Me siento triste todo el tiempo.<br/>
+                <input type="radio" name="q1" value="3"> Me siento tan triste o soy tan infeliz que no puedo soportarlo.
+            </div>
+            <div class="question">
+                <label for="q2">2. Pesimismo  </label><br/>
+                <input type="radio" name="q2" value="0" required> No estoy desalentado respecto de mi futuro<br/>
+                <input type="radio" name="q2" value="1"> Me siento más desalentado respecto de mi futuro que lo que solía estarlo.<br/>
+                <input type="radio" name="q2" value="2"> No espero que las cosas funcionen para mi.<br/>
+                <input type="radio" name="q2" value="3"> Siento que no hay esperanza para mi futuro y que sólo puede empeorar. 
+            </div>
+
+            <div class="question">
+                <label for="q3">3. Fracaso  </label><br/>
+                <input type="radio" name="q3" value="0" required> No me siento como un fracasado.<br/>
+                <input type="radio" name="q3" value="1">  He fracasado más de lo que hubiera debido.<br/>
+                <input type="radio" name="q3" value="2">  Cuando miro hacia atrás, veo muchos fracasos.<br/>
+                <input type="radio" name="q3" value="3">  Siento que como persona soy un fracaso total.
+            </div>
+
+            <div class="question">
+                <label for="q4">4. Pérdida de Placer</label><br/>
+                <input type="radio" name="q4" value="0" required> Obtengo tanto placer como siempre por las cosas de las que disfruto.<br/>
+                <input type="radio" name="q4" value="1">  No disfruto tanto de las cosas como solía hacerlo.<br/>
+                <input type="radio" name="q4" value="2"> Obtengo muy poco placer de las cosas que solía disfrutar.<br/>
+                <input type="radio" name="q4" value="3"> No puedo obtener ningún placer de las cosas de las que solía disfrutar. 
+            </div>
+            <div class="question">
+                <label for="q5">5. Sentimientos de Culpa</label><br/>
+                <input type="radio" name="q5" value="0" required> No me siento particularmente culpable.<br/>
+                <input type="radio" name="q5" value="1"> Me siento culpable respecto de varias cosas que he hecho o que debería haber
+                hecho.<br/>
+                <input type="radio" name="q5" value="2"> Me siento bastante culpable la mayor parte del tiempo.<br/>
+                <input type="radio" name="q5" value="3"> Me siento culpable todo el tiempo. 
+            </div>
+            
+            <div class="question">
+                <label for="q6">6.  Sentimientos de Castigo</label><br/>
+                <input type="radio" name="q6" value="0" required> No siento que este siendo castigado<br/>
+                <input type="radio" name="q6" value="1"> Siento que tal vez pueda ser castigado.<br/>
+                <input type="radio" name="q6" value="2"> Espero ser castigado.<br/>
+                <input type="radio" name="q6" value="3"> Siento que estoy siendo castigado. 
+            </div>
+
+            <div class="question">
+                <label for="q7">7.Disconformidad con uno mismo.</label><br/>
+                <input type="radio" name="q7" value="0" required> Siento acerca de mi lo mismo que siempre.<br/>
+                <input type="radio" name="q7" value="1"> He perdido la confianza en mí mismo.<br/>
+                <input type="radio" name="q7" value="2"> Estoy decepcionado conmigo mismo.<br/>
+                <input type="radio" name="q7" value="3"> No me gusto a mí mismo. 
+            </div>
+
+            <div class="question">
+                <label for="q8">8. Autocrítica </label><br/>
+                <input type="radio" name="q8" value="0" required> No me critico ni me culpo más de lo habitual<br/>
+                <input type="radio" name="q8" value="1"> Estoy más crítico conmigo mismo de lo que solía estarlo<br/>
+                <input type="radio" name="q8" value="2"> Me critico a mí mismo por todos mis errores<br/>
+                <input type="radio" name="q8" value="3"> Me culpo a mí mismo por todo lo malo que sucede.
+            </div>
+            <div class="question">
+                <label for="q9">9. Pensamientos o Deseos Suicidas </label><br/>
+                <input type="radio" name="q9" value="0" required> No tengo ningún pensamiento de matarme.<br/>
+                <input type="radio" name="q9" value="1"> He tenido pensamientos de matarme, pero no lo haría<br/>
+                <input type="radio" name="q9" value="2"> Querría matarme<br/>
+                <input type="radio" name="q9" value="3"> Me mataría si tuviera la oportunidad de hacerlo. 
+            </div>
+
+            <div class="question">
+                <label for="q10">10. Llanto </label><br/>
+                <input type="radio" name="q10" value="0" required>No lloro más de lo que solía hacerlo.<br/>
+                <input type="radio" name="q10" value="1"> Lloro más de lo que solía hacerlo<br/>
+                <input type="radio" name="q10" value="2"> Lloro por cualquier pequeñez.<br/>
+                <input type="radio" name="q10" value="3"> Siento ganas de llorar pero no puedo.
+            </div>
+            <div class="question">
+                <label for="q11">11. Agitación</label><br/>
+                <input type="radio" name="q11" value="0" required>  No estoy más inquieto o tenso que lo habitual.<br/>
+                <input type="radio" name="q11" value="1"> Me siento más inquieto o tenso que lo habitual.<br/>
+                <input type="radio" name="q11" value="2"> Estoy tan inquieto o agitado que me es difícil quedarme quieto<br/>
+                <input type="radio" name="q11" value="3">Estoy tan inquieto o agitado que tengo que estar siempre en movimiento o
+                haciendo algo.
+            </div>
+            <div class="question">
+                <label for="q12">12. Pérdida de Interés</label><br/>
+                <input type="radio" name="q12" value="0" required> No he perdido el interés en otras actividades o personas.<br/>
+                <input type="radio" name="q12" value="1"> Estoy menos interesado que antes en otras personas o cosas.<br/>
+                <input type="radio" name="q12" value="2"> He perdido casi todo el interés en otras personas o cosas.<br/>
+                <input type="radio" name="q12" value="3"> Me es difícil interesarme por algo. 
+            </div>
+            <div class="question">
+                <label for="q13">13. . Indecisión</label><br/>
+                <input type="radio" name="q13" value="0" required> Tomo mis propias decisiones tan bien como siempre..<br/>
+                <input type="radio" name="q13" value="1"> Me resulta más difícil que de costumbre tomar decisiones<br/>
+                <input type="radio" name="q13" value="2"> Encuentro mucha más dificultad que antes para tomar decisiones.<br/>
+                <input type="radio" name="q13" value="3">Tengo problemas para tomar cualquier decisión. 
+            </div>
+            <div class="question">
+                <label for="q14">14. Desvalorización</label><br/>
+                <input type="radio" name="q14" value="0" required> No siento que yo no sea valioso<br/>
+                <input type="radio" name="q14" value="1"> No me considero a mi mismo tan valioso y útil como solía considerarme<br/>
+                <input type="radio" name="q14" value="2"> Me siento menos valioso cuando me comparo con otros.<br/>
+                <input type="radio" name="q14" value="3">Siento que no valgo nada.
+            </div>
+            <div class="question">
+                <label for="q15">15. Pérdida de Energía</label><br/>
+                <input type="radio" name="q15" value="0" required> Tengo tanta energía como siempre.<br/>
+                <input type="radio" name="q15" value="1">Tengo menos energía que la que solía tener.<br/>
+                <input type="radio" name="q15" value="2"> No tengo suficiente energía para hacer demasiado<br/>
+                <input type="radio" name="q15" value="3"> No tengo energía suficiente para hacer nada
+            </div>
+            <div class="question">
+                <label for="q16">16. Cambios en los Hábitos de Sueño</label><br/>
+                <input type="radio" name="q16" value="0" required> No he experimentado ningún cambio en mis hábitos de sueño.<br/>
+                <input type="radio" name="q16" value="1"> Duermo un poco más que lo habitual.<br/>
+                <input type="radio" name="q16" value="1"> Duermo un poco menos que lo habitual.<br/>
+                <input type="radio" name="q16" value="2"> Duermo mucho más que lo habitual.<br/>
+                <input type="radio" name="q16" value="2"> Duermo mucho menos que lo habitual<br/>
+                <input type="radio" name="q16" value="3"> Duermo la mayor parte del día.<br/>
+                <input type="radio" name="q16" value="3"> Me despierto 1-2 horas más temprano y no puedo volver a dormirme
+            </div>
+            <div class="question">
+                <label for="q17">17. Irritabilidad</label><br/>
+                <input type="radio" name="q17" value="0" required>No estoy tan irritable que lo habitual.<br/>
+                <input type="radio" name="q17" value="1"> Estoy más irritable que lo habitual.<br/>
+                <input type="radio" name="q17" value="2"> Estoy mucho más irritable que lo habitual.<br/>
+                <input type="radio" name="q17" value="3"> Estoy irritable todo el tiempo.
+            </div>
+            <div class="question">
+                <label for="q18">18. Cambios en el Apetito</label><br/>
+                <input type="radio" name="q18" value="0" required> No he experimentado ningún cambio en mi apetito.<br/>
+                <input type="radio" name="q18" value="1"> Mi apetito es un poco menor que lo habitual.<br/>
+                <input type="radio" name="q18" value="1"> Mi apetito es un poco mayor que lo habitual.<br/>
+                <input type="radio" name="q18" value="2"> Mi apetito es mucho menor que antes.<br/>
+                <input type="radio" name="q18" value="2"> Mi apetito es mucho mayor que lo habitual<br/>
+                <input type="radio" name="q18" value="3"> No tengo apetito en absoluto..<br/>
+                <input type="radio" name="q18" value="3"> Quiero comer todo el día. 
+            </div>
+            <div class="question">
+                <label for="q19">19. Dificultad de Concentración </label><br/>
+                <input type="radio" name="q19" value="0" required> Puedo concentrarme tan bien como siempre.<br/>
+                <input type="radio" name="q19" value="1"> No puedo concentrarme tan bien como habitualmente<br/>
+                <input type="radio" name="q19" value="2"> Me es difícil mantener la mente en algo por mucho tiempo.<br/>
+                <input type="radio" name="q19" value="3"> Encuentro que no puedo concentrarme en nada.
+            </div>
+            <div class="question">
+                <label for="q20">20. Cansancio o Fatiga </label><br/>
+                <input type="radio" name="q20" value="0" required> No estoy más cansado o fatigado que lo habitual.<br/>
+                <input type="radio" name="q20" value="1"> Me fatigo o me canso más fácilmente que lo habitual.<br/>
+                <input type="radio" name="q20" value="2"> Estoy demasiado fatigado o cansado para hacer muchas de las cosas que solía hacer.<br/>
+                <input type="radio" name="q20" value="3"> Estoy demasiado fatigado o cansado para hacer la mayoría de las cosas que solía hacer
+            </div>
+            <div class="question">
+                <label for="q21">21. Pérdida de Interés en el Sexo</label><br/>
+                <input type="radio" name="q21" value="0" required> No he notado ningún cambio reciente en mi interés por el sexo.<br/>
+                <input type="radio" name="q21" value="1"> Estoy menos interesado en el sexo de lo que solía estarlo.<br/>
+                <input type="radio" name="q21" value="2"> Estoy mucho menos interesado en el sexo.<br/>
+                <input type="radio" name="q21" value="3"> He perdido completamente el interés en el sexo. 
+            </div>
+            
+            
+
+            <div id="buttonContainer">
+                <button id="nextBtn">Siguiente</button>
+                <button id="prevBtn" style="display:none;">Anterior</button>
+            </div>
+            
+            
+
+            <div id="nextBtnContainer"></div>
+            <div id="submitBtnContainer"></div>
+            
+        </form>
+        
+    </section>
+
+</div>
+    
+       
+        
+    
+<footer class="footer">
+    <div class="copyright">
+        &copy; 2023 Thómas, Asistente Virtual. Todos los derechos reservados.
+    </div>
+    
+    <div class="footer-socials">
+        <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt="Perfil de Instagram de Thomas Checo"></a>
+        <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt="Perfil de facebook de Thomas Checo"></a>
+        <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt="Perfil de linkedin de Thomas Checo"></a>
+    </div>
+</footer>
+<script src="../js/test_depresion.js"></script> 
+</body>
+</html>

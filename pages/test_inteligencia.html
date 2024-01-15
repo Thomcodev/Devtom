@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test_inteligencia.css">
+ 
+    <title>Test Thómas</title>
+</head>
+<body>
+    <header class="header">
+        <header class="menu " >
+            <a  href="#"><img src="../img/1-removebg-preview.png" alt="thómas, aistente virtual" class="logo-header"></a>
+           
+    
+            
+            
+
+
+            <div class="socials-1">
+                <a href="../pages/tests.html" class="icono-salida"><img src="../img/salida.png" alt="Cerrar sesión"></a>
+                <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt=""></a>
+            </div>
+
+          
+
+        </header>
+        <h1>TEST DE INTELIGENCIAS MULTIPLES.</h1>
+    </header>
+
+
+    <form action="test_inteligencia.php" method="post" id="formularioEstudiante">
+        <label for="institucion">Nombre de la Institución educativa donde estudia:</label>
+        <input type="text" id="institucion" name="institucion" required>
+    
+        <label for="nombre">Nombres y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="cedula">Número de Cédula o Tarjeta de Identidad:</label>
+        <input type="number" id="cedula" name="cedula" required>
+    
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+    
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+    
+        <label for="grado">Grado que estudia:</label>
+        <select id="grado" name="grado" onchange="mostrarOtroCampo()">
+            <option value="sexto">Sexto Grado</option>
+            <option value="septimo">Séptimo Grado</option>
+            <option value="octavo">Octavo Grado</option>
+            <option value="noveno">Noveno Grado</option>
+            <option value="decimo">Décimo Grado</option>
+            <option value="once">Once Grado</option>
+            <option value="otro">Otro</option>
+        </select>
+        
+        <div id="otroCampo" style="display: none;"> <!-- Este div estará oculto inicialmente -->
+            <label for="detalleOtro">Especifique:</label>
+            <input type="text" id="detalleOtro" name="detalleOtro">
+        </div>
+    
+        <input type="submit" value="Enviar">
+    </form>
+
+<div class="container">
+   
+    
+    <section>
+        <br>
+        <p>Responda con sinceridad, recuerde que no hay respuestas buenas o malas.</p>
+        <p>Instrucciones: Lea cuidadosamente cada una de las afirmaciones siguientes. </p>
+        <p>Si cree que refleja una característica suya y le parece que la
+            afirmación es verdadera, seleccione el numero “V” <br>
+            
+            Si cree que no refleja una característica suya y le parece que la
+            afirmación es falsa, seleccione el numero “F” <br>
+            
+            Si está dudoso porque a veces es verdadera y a veces es falsa,
+            seleccione el “VF”</p>
+        <p>Todos los campos son obligatorios.</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <form id="inteligenciastest" action="./test_inteligencia.php" method="post" novalidate>
+           
+
+            
+            <div class="question">
+                <label for="q1">1. Prefiero hacer un mapa que explicarle a alguien como tiene que llegar a un lugar determinado.</label><br/>
+                <input type="radio" name="q1" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q1" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q1" value="2"> Afirmacón Falsa.<br/>
+                
+            </div>
+            <div class="question">
+                <label for="q2">2. Si estoy enfadado o contento generalmente sé la razón exacta de por qué es así  </label><br/>
+                <input type="radio" name="q2" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q2" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q2" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+
+            <div class="question">
+                <label for="q3">3. Sé tocar, o antes sabía, un instrumento musical. </label><br/>
+                <input type="radio" name="q3" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q3" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q3" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+
+            <div class="question">
+                <label for="q4">4. Asocio la música con mis estados de ánimo.</label><br/>
+                <input type="radio" name="q4" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q4" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q4" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q5">5. Puedo sumar o multiplicar mentalmente con mucha rapidez.
+                </label><br/>
+                <input type="radio" name="q5" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q5" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q5" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            
+            <div class="question">
+                <label for="q6">6.  Puedo ayudar a un amigo(a) a manejar y controlar sus sentimientos, porque yo lo pude hacer antes en relación a sentimientos parecidos.</label><br/>
+                <input type="radio" name="q6" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q6" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q6" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+
+            <div class="question">
+                <label for="q7">7.Me gusta trabajar con calculadora y computadoras.
+                    .</label><br/>
+                <input type="radio" name="q7" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q7" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q7" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+
+            <div class="question">
+                <label for="q8">8. Aprendo rápidamente a bailar un baile nuevo.
+                </label><br/>
+                <input type="radio" name="q8" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q8" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q8" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q9">9. No me es difícil decir lo que pienso durante una discusión o debate.
+                </label><br/>
+                <input type="radio" name="q9" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q9" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q9" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+
+            <div class="question">
+                <label for="q10">10. ¿Disfruto de una buena charla, prédica o sermón?
+                </label><br/>
+                <input type="radio" name="q10" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q10" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q10" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q11">11. Siempre distingo el Norte del Sur, esté donde esté.</label><br/>
+                <input type="radio" name="q11" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q11" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q11" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q12">12. Me gusta reunir grupos de personas en una fiesta o evento especial.
+                    *
+                    </label><br/>
+                <input type="radio" name="q12" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q12" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q12" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q13">13. Realmente la vida me parece vacía sin música.
+                </label><br/>
+                <input type="radio" name="q13" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q13" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q13" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q14">14. Siempre entiendo los gráficos que vienen en las instrucciones de equipos o instrumentos</label><br/>
+                <input type="radio" name="q14" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q14" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q14" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q15">15. Me gusta resolver puzles y entretenerme con juegos electrónicos.
+                </label><br/>
+                <input type="radio" name="q15" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q15" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q15" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q16">16. Me fue fácil aprender a andar en bicicleta o patines</label><br/>
+                <input type="radio" name="q16" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q16" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q16" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q17">17. Me enojo cuando escucho una discusión o una afirmación que me parece ilógica o absurda.</label><br/>
+                <input type="radio" name="q17" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q17" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q17" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q18">18. Soy capaz de convencer a otros que sigan mis planes o ideas.
+                </label><br/>
+                <input type="radio" name="q18" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q18" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q18" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q19">19. Tengo buen sentido del equilibrio y de coordinación.
+                </label><br/>
+                <input type="radio" name="q19" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q19" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q19" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+            <div class="question">
+                <label for="q20">20. A menudo puedo captar relaciones entre números con mayor rapidez y facilidad que algunos de mis compañeros. </label><br/>
+                <input type="radio" name="q20" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q20" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q20" value="2"> Afirmacón Falsa.<br/> 
+            </div>
+          
+            
+            <div class="question">
+                <label for="q21">21. Me gusta construir modelos, maquetas o hacer esculturas.</label><br/>
+                <input type="radio" name="q21" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q21" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q21" value="2"> Afirmación Falsa.<br/>
+            </div>
+        
+            <div class="question">
+                <label for="q22">22. Soy bueno para encontrar el significado preciso de las palabras.</label><br/>
+                <input type="radio" name="q22" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q22" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q22" value="2"> Afirmación Falsa.<br/>
+            </div>
+        
+            <div class="question">
+                <label for="q23">23. Puedo mirar un objeto de una manera y con la misma facilidad verlo dado vuelta o al revés.</label><br/>
+                <input type="radio" name="q23" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q23" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q23" value="2"> Afirmación Falsa.<br/>
+            </div>
+        
+            <div class="question">
+                <label for="q24">24. Con frecuencia establezco la relación que puede haber entre una música o canción y algo que haya ocurrido en mi vida.</label><br/>
+                <input type="radio" name="q24" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q24" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q24" value="2"> Afirmación Falsa.<br/>
+            </div>
+        
+            <div class="question">
+                <label for="q25">25. Me gusta trabajar con números y figuras.</label><br/>
+                <input type="radio" name="q25" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q25" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q25" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+
+            <div class="question">
+                <label for="q26">26. Me gusta sentarme muy callado y pensar, reflexionar sobre mis sentimientos más íntimos.</label><br/>
+                <input type="radio" name="q26" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q26" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q26" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q27">27. Solamente con mirar las formas de las construcciones y estructuras me siento a gusto.</label><br/>
+                <input type="radio" name="q27" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q27" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q27" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q28">28. Cuando estoy en la ducha, o cuando estoy solo me gusta tararear, cantar o silbar.</label><br/>
+                <input type="radio" name="q28" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q28" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q28" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q29">29. Soy bueno para el atletismo.</label><br/>
+                <input type="radio" name="q29" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q29" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q29" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q30">30. Me gusta escribir cartas largas a mis amigos.</label><br/>
+                <input type="radio" name="q30" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q30" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q30" value="2"> Afirmación Falsa.<br/>
+            </div>
+
+            
+            <div class="question">
+                <label for="q31">31. Generalmente me doy cuenta de la expresión o gestos que tengo en la cara.</label><br/>
+                <input type="radio" name="q31" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q31" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q31" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q32">32. Muchas veces me doy cuenta de las expresiones o gestos en la cara de las otras personas.</label><br/>
+                <input type="radio" name="q32" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q32" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q32" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q33">33. Reconozco mis estados de ánimo, no me cuesta identificarlos.</label><br/>
+                <input type="radio" name="q33" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q33" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q33" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q34">34. Me doy cuenta de los estados de ánimo de las personas con quienes me encuentro.</label><br/>
+                <input type="radio" name="q34" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q34" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q34" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+            <div class="question">
+                <label for="q35">35. Me doy cuenta bastante bien de lo que los otros piensan de mí.</label><br/>
+                <input type="radio" name="q35" value="0" required> Aveces es Verdadera o Falsa<br/>
+                <input type="radio" name="q35" value="1"> Afirmación verdadera<br/>
+                <input type="radio" name="q35" value="2"> Afirmación Falsa.<br/>
+            </div>
+            
+
+            <div id="buttonContainer">
+                <button id="nextBtn">Siguiente</button>
+                <button id="prevBtn" style="display:none;">Anterior</button>
+            </div>
+            
+            
+
+            <div id="nextBtnContainer"></div>
+            <div id="submitBtnContainer"></div>
+            
+        </form>
+        
+    </section>
+
+</div>
+    
+       
+        
+    
+<footer class="footer">
+    <div class="copyright">
+        &copy; 2023 Thómas, Asistente Virtual. Todos los derechos reservados.
+    </div>
+    
+    <div class="footer-socials">
+        <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt="Perfil de Instagram de Thomas Checo"></a>
+        <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt="Perfil de facebook de Thomas Checo"></a>
+        <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt="Perfil de linkedin de Thomas Checo"></a>
+    </div>
+</footer>
+<script src="../js/test_inteligencia.js"></script> 
+</body>
+</html>

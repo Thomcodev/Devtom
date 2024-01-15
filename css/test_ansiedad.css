@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+ 
+    
+}
+body {
+   font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px; 
+    border-radius: 10px; 
+   
+    
+    
+}
+
+.header {
+    background-color: #1B70A6;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.header h1{
+   font-size: 30px;
+   align-items: center;
+   margin-left: 50px;
+   margin-top: 100px;
+   color: white;
+}
+
+.logo-header {
+   width: 190px; 
+   height: auto; 
+}
+
+/* --- Estilos de menú --- */
+.menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   padding: 0 40px;
+   background-color: #FFFFFF;
+   z-index: 100;
+}
+
+.navbar {
+   display: flex;
+   justify-content: flex-start;
+}
+
+/* --- Estilos para botones --- */
+
+
+/* --- Estilos para redes sociales --- */
+.socials-1 img {
+   width: 20px;
+   margin-right: 15px;
+}
+
+.icono-salida {
+   display: inline-block;
+   width: 20px;  /* Ajusta según el tamaño deseado para el ícono */
+   height: 24px;
+   margin: 0 10px;  /* Ejemplo de margen */
+   /* ... otros estilos que desees ... */
+}
+
+.icono-salida img {
+   max-width: 100%;
+   height: auto;
+   /* ... otros estilos que desees para la imagen dentro del ícono ... */
+}
+ 
+
+ p{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+    text-align: left;
+ }
+
+
+
+ .btn-1{
+    display: inline-block;
+    padding: 13px 30px;
+    background-color:orange;
+    color: aliceblue;
+    border-radius: 25px;
+    font-size: 18px;
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .btn-1:hover{
+    background-color:red;
+ }
+
+
+
+form {
+   margin-top: 80px;
+   background-color: white;
+}
+
+label, select {
+   display: block;
+   margin-bottom: 10px;
+   margin-top: 20px;
+}
+
+input[type="submit"] {
+   background-color: #403A38;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+input[type="radio"] {
+   margin-right: 10px; /* Espaciado a la derecha de los radios */
+}
+.question {
+   background-color: #e2e2e2; /* Color más claro para las preguntas */
+   padding: 15px; /* Espaciado interno para cada pregunta */
+   margin-bottom: 15px; /* Espaciado entre preguntas */
+   border-radius: 5px; /* Bordes redondeados para cada pregunta */
+}
+
+label {
+   color: #333; /* Color oscuro para las etiquetas */
+   font-weight: bold; /* Letras en negrita */
+}
+
+button {
+   background-color: #1B70A6; /* Color de fondo del botón */
+   color: #fff; /* Color de texto del botón */
+   padding: 10px 20px; /* Espaciado interno del botón */
+   border: none; /* Remover el borde predeterminado */
+   cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre el botón */
+   border-radius: 5px; /* Bordes redondeados del botón */
+   transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+   margin-top: 20px; 
+}
+
+/* Estilo para el botón al pasar el mouse sobre él */
+button:hover {
+   background-color: #26B0BF; /* Color de fondo más oscuro al pasar el mouse sobre el botón */
+}
+  
+  
+
+ 
+  
+  
+.footer {
+   width: 100%;
+   background-color: #1B70A6;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 0;
+   height: 200px;
+   margin-top: 50px;
+}
+
+.copyright {
+   text-align: left;
+   width: 90vw;
+   max-width: 1200px;
+   order: 2;
+}
+
+.footer-socials {
+   width: 90vw;
+   max-width: 1200px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.footer a {
+   color: #fff;
+   text-decoration: none;
+   margin: 0 15px;
+}
+
+.footer img {
+   width: 25px;
+   height: 25px;
+}
+
+
+
+
+
+ 
+ form {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        input[type=radio] {
+            margin: 4px 0 0;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+
+     
+     
+     .question.active {
+         display: block;
+     }
+     
+     
+     .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      display: inline-block; /* para que se muestren lado a lado */
+      vertical-align: top; /* para alinearlos correctamente si tienen diferentes alturas */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+      max-width: 100%; /* para asegurar que la imagen no exceda el ancho de la tarjeta */
+      border-radius: 5px;
+  }
+  
+  .card button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+  
+  .card button:hover {
+      background-color: #555;
+  }
+  
+  .card {
+   /* Estilos de la tarjeta, como márgenes, sombras, etc. Si ya tienes estilos para la tarjeta, omite esta parte. */
+   margin: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.card img {
+   width: 100%; /* Asegúrate de que la imagen se adapte al ancho de la tarjeta */
+}
+
+.card-link {
+   display: block;
+   text-align: center;
+   margin: 10px;
+}
+
+/* Estilos generales para la tabla */
+/* Estilos generales para la tabla */
+/* Estilos generales para la tabla */
+table {
+   border-collapse: collapse;
+   width: 100%;
+   background-color: #f8f8f8;
+   margin-top: 20px;
+   font-family: Arial, sans-serif;
+}
+
+th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+}
+
+td.question {
+   text-align: left; /* Esto alineará solo las celdas con preguntas a la izquierda */
+}
+
+th {
+   background-color: #1B70A6;
+   color: white;
+}
+
+tr:hover {
+   background-color: #f5f5f5;
+}
+
+input[type=radio] {
+   margin: 0;
+   padding: 0;
+   vertical-align: middle;
+}
+
+.logo-circle {
+   width: 90px; 
+   height: 90px; 
+   border-radius: 50%; 
+   overflow: hidden;
+   display: flex; /* Cambia a flex */
+   align-items: center; /* Centra verticalmente */
+   justify-content: center; /* Centra horizontalmente */
+   background-color: #ffffff;
+   box-sizing: border-box;
+   margin-right: 20px;
+}
+
+
+.logo-circle img {
+   width: 60%; /* Esta línea hace que la imagen del logo sea más pequeña que el círculo contenedor */
+   height: auto;
+   display: block;
+   margin: auto; /* Esto centra la imagen dentro del círculo */
+}
+
+
+
+#table1 {
+   display: table;
+}
+#table2 {
+   display: none;
+}
+
+#buttonsContainer {
+   display: flex;
+   justify-content: space-between; /* Esto separa los botones entre sí */
+   max-width: 250px; /* Ajusta según el espacio que desees entre los botones */
+   margin: 20px auto; /* Centra el contenedor de botones */
+}
