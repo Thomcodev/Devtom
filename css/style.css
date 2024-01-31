@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
-/* Variables for Color Palette */
-:root {
-    --primary-color: #2C3E50;
-    --secondary-color: #B4BFC6;
-    --highlight-color: #E74C3C;
-    --light-bg: #ECF0F1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Instrument+Serif&family=Poppins:wght@100&family=Volkhov&display=swap');
+
+
 
 * {
     margin: 0;
@@ -15,130 +12,52 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Open Sans', sans-serif; /* Using a more neutral font for content */
+   
+
 }
 
 html, body {
-    overflow-x: hidden;
-    background-color: var(--light-bg);
-    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
+
 
 /* Typography Adjustments */
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-h2, h3 {
-    font-family: 'Bebas Neue', cursive;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 48px;
-}
-
-h3 {
-    font-size: 36px;
-}
 
 .header {
-    flex: none;
-    display: flex;
-    align-items: center;
     min-height: 10vh;
 }
 
-.logo-header {
+.container-fluid .navbar-brand .logo-header {
     width: 100px; 
     height: auto; 
 }
-
-/* --- Estilos de menú --- */
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    padding: 0 40px;
-    background-color: aliceblue;
-    z-index: 100;
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-start;
-}
-
-/* --- Estilos para botones --- */
-.botones {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.btn-sesion {
-    display: inline-block;
-    padding: 7px 15px;
-    margin: 0 10px;
-    font-size: 18px;
-    color: white;
-    background-color: #26B0BF;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-sesion:hover {
-    color: white;
-    background-color: #1B70A6;
-}
-
-/* --- Estilos para redes sociales --- */
-.socials-1 img {
-    width: 20px;
-    margin-right: 15px;
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 20px;
-}
-.navbar ul li a {
-    font-size: 14px; /* Ajusta este valor según tus necesidades */
-}
-
-.navbar ul li {
-    padding: 5px 10px; /* Ajusta estos valores según tus necesidades */
-}
-
-
-.navbar a {
-    color: var(--white-color);
-    text-transform: uppercase;
+ #menu .nav a{
+    font-family: 'Abhaya Libre', serif;
+    color: #181E4B; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none; /* Elimina la subrayado predeterminado */
     font-weight: bold;
-    transition: color 0.3s;
+   
+ }
+
+ #menu .nav li {
+    margin: 0 10px; 
+    font-size: 16px;
 }
 
-.navbar a:hover {
-    color: var(--accent-color);
+
+#button {
+    border: 1px solid #F27405;
+   
+    padding: 5px 5px;
 }
 
-.icono-salida, .socials-1 img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+#button:hover {
+    color: white;
+    background-color: #F27405;
+    border: 1px solid black;
 }
 
 /* Adjusting other styles */
@@ -356,43 +275,6 @@ body {
 /* --- Estilos de pie de página --- */
 /* Estilos para el Footer */
 
-.footer {
-    width: 100%;
-    background-color: #1B70A6;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    height: 200px;
-    margin-top: 50px;
- }
- 
- .copyright {
-    text-align: left;
-    width: 90vw;
-    max-width: 1200px;
-    order: 2;
- }
- 
- .footer-socials {
-    width: 90vw;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
- }
- 
- .footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
- }
- 
- .footer img {
-    width: 25px;
-    height: 25px;
- }
  
  .card {
     width: 90vw;
@@ -503,3 +385,51 @@ aside {
     height: 100%;
     object-fit: cover; /* Ajusta la imagen para que cubra todo el marco */
   }
+
+
+
+  
+
+  footer {
+    display: block;
+}
+  .footer-footer {
+    background-color: rgba(151, 148, 148, 0.624);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+}
+.principal{
+    width: auto;
+}
+.div-primero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo-footer {
+    max-width: 100px;
+}
+
+
+
+.socials-1 img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+
+
+#frase {
+    margin-top: 20px;
+}
+
+#derechos {
+    margin-top: 20px;
+    color: #777;
+}

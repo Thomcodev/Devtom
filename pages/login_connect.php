@@ -23,7 +23,7 @@ if (isset($_POST['nombre']) && isset($_POST['correo']) && isset($_POST['contrase
 
     if ($stmt->execute()) {
         echo "Usuario registrado con éxito";
-        header("Location: login_ingreso.php");
+        header("Location: acceso.html");
         exit;
     } else {
         echo "Error: " . $stmt->error;

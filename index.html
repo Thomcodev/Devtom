@@ -1,48 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home-styles.css">
-    <link rel="shortcut icon" href="img/favicon_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="shortcut icon" href="img/iconLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
     <title>Devtomy</title>
 </head>
 <body>
-    <header class="header">
         <nav class="navbar navbar-expand-md justify-content-center fixed-top bg-white navbar-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logotipo.png" alt="thómas, asistente virtual" class="logo-header"></a>
-                
+                <a class="navbar-brand" href="#inicio"><img src="img/logoTipo.png" alt="thómas, asistente virtual" class="logo-header"></a>
                 <button class="navbar-toggler color-black" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        
                 <div class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav ">
                         <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
-                        <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Acerca</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Acceso</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link" id="button">Registrarse</a></li>
+                        <li class="nav-item"><a href="#quienes-somos" class="nav-link">Acerca de</a></li>
+                        <li class="nav-item"><a href="#Contacto" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="pages/acceso.html" class="nav-link" id="button">Acceso</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-    </header>
-
-    <div class="main">
-       <section id="inicio">
+  
+   <main>
+    <section class="inicio">
         <div class="row">
             <div class="col-md-6 order-md-2">
                 <div class="image-container">
-                    <img src="img/persona_feliz.png" alt="persona feliz" class="float-start img-fluid">
+                    <img src="img/personaFeliz.png" alt="persona feliz" class="float-start img-fluid">
                     <svg class="svg-background" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#F27405" d="M31.5,-20.2C46.6,-6.1,68.8,7.3,69.4,20.2C69.9,33.1,48.9,45.5,30.6,48.6C12.3,51.7,-3.3,45.5,-22.7,39.3C-42.1,33,-65.2,26.6,-71.1,12.9C-76.9,-0.9,-65.4,-21.9,-50.6,-35.9C-35.9,-49.9,-17.9,-56.9,-4.9,-53C8.2,-49.1,16.3,-34.3,31.5,-20.2Z" transform="translate(100 100)" />
+                        <path fill="#FF7E3E" d="M40.7,-60.6C49.4,-49.8,50.8,-33.3,57.7,-17.5C64.6,-1.6,77.1,13.8,76.9,28.2C76.7,42.7,63.7,56.3,48.8,64.7C33.8,73.1,16.9,76.4,0.4,75.8C-16.1,75.3,-32.3,71,-42.6,61.1C-52.9,51.1,-57.4,35.6,-60.8,20.8C-64.2,6,-66.5,-8.2,-61.4,-18.6C-56.2,-29,-43.5,-35.7,-32,-45.6C-20.5,-55.6,-10.3,-68.8,2.9,-72.8C16,-76.7,32,-71.4,40.7,-60.6Z" transform="translate(100 100)" />
                     </svg>
                 </div>
             </div>
@@ -52,108 +45,139 @@
                     <p class="lead">El mejor asistente virtual del mundo</p>
                 </div>
                 <div class="container-fluid" id="segundo">
-                    <p>Descubre la paz interior y gestiona la ansiedad con Thomy.</p>
+                    <p>Descubre la paz interior y gestiona tu salud mental con Thomy.</p>
                 </div>
                 <div class="container-fluid" id="tercero">
-                    <p>Tu asistente virtual, está aquí para ser tu aliado en la búsqueda de tranquilidad.
+                    <p>Tu asistente virtual está aquí para ser tu aliado en la búsqueda de tranquilidad.
                         Con consejos personalizados, recordatorios de autocuidado y un oído atento.</p>
                 </div>
-                <div class="container-fluid" id="button-saber-mas">
-                    <a href="">Saber más</a>
+                <div class="container-fluid"  >
+                    <a href="pages/registro.html" id="button-saber-mas">Registrate aqui</a>
                 </div>
-
             </div>
-          </div>
-       </section>
+        </div>
+   </section>
 
-        <section id="servicios" class="saber-mas container-fluid">
-            <div class="container-fluid" id="Categoria">
-                <p>Servicios</p>
-            </div>
-            <div class="container-fluid">
-                <h2>Nosotros tenemos los mejores servicios de asistencia virtual</h2>
-            </div>
-            
-            
-            <div class="tarjetas container-fluid">
-                <div class="card1 ">
-                    <div class="card-header">
-                        <img src="img/chat-flatline.svg" alt="">
-                    </div>
-                    <div class="card-body">Asistencia virtual</div>
-                    <div class="card-footer"><ul><li>Uso del asistente virtual Thomy</li>
-                       </ul></div>
-                  </div>
+   <section class="sobre-thomy">
+    <div class="contenido">
+      <h2>Thomy: Tu Compañero para la Salud Mental</h2>
+      <p>Descubre la historia, la tecnología y el equipo detrás de Thomy, el asistente virtual diseñado para ayudarte en tus problemas de ansiedad y depresión.</p>
 
-                  <div class="card2">
-                    <div class="card-header">
-                        <img src="img/yoga-two-color.svg" alt="">
-                    </div>
-                    <div class="card-body">Entretenimiento y Bienestar</div>
-                    <div class="card-footer">Ejercicios de meditación.</div>
-                  </div>
+      <div class="historia">
+        <h3>Historia y Origen</h3>
+        <p>Thomy nació con la visión de proporcionar apoyo emocional a aquellos que luchan contra la ansiedad y la depresión. La idea surgió...</p>
+      </div>
 
-                  <div class="card3">
-                    <div class="card-header">
-                        <img src="img/mobile-testing-isometric.svg" alt="">
-                    </div>
-                    <div class="card-body">Implementacion de diferentes test</div>
-                    <div class="card-footer">Medición del nivel de depresion y ansiedad</div>
-                  </div>
+      <div class="tecnologia">
+        <h3>Tecnología Utilizada</h3>
+        <p>Thomy utiliza tecnología de vanguardia, incluyendo inteligencia artificial y procesamiento del lenguaje natural, para entender y responder a tus necesidades de manera empática y efectiva.</p>
+      </div>
 
-                  <div class="card4">
-                    <div class="card-header">
-                        <img src="img/doctor-monochromatic.svg" alt="">
-                    </div>
-                    <div class="card-body">Diversidad de Blogs</div>
-                    <div class="card-footer">Encontraras varios blogs relacionados con tu salud mental</div>
-                  </div>
-            </div>
-        </section>
-
-        <section class="quienes-somos container-fluid">
-            <div id="Categoria container-fluid">
-                <p>¿Quienes somos?</p>
-                <h2>¡Bienvenidos a nuestro gran proyecto!</h2>
-            </div>
-            
-            <div class="contenido container-fluid " >
-                <p >Somos un apasionado grupo de estudiantes dedicados al fascinante mundo de las tecnologías, con un enfoque especial en el desarrollo de software. Nuestra misión es impulsar la innovación y facilitar la vida cotidiana a través de soluciones tecnológicas inteligentes.
-                </p>
-            </div>
-            
-            <div class="tarjetas">
-                <div class="card101">
-                    <div class="card-header">
-                        <img src="img/pedro.jpeg" alt="">
-                    </div>
-                    <div class="card-body">Desarrollador front-end</div>
-                    <div class="card-footer"><ul><li>Html-css-javascript-boostrapt</li>
-                       </ul></div>
-                  </div>
-
-                  <div class="card202">
-                    <div class="card-header">
-                        <img src="img/santiago.png" alt="">
-                    </div>
-                    <div class="card-body">Desarrollador back-end</div>
-                    <div class="card-footer">Mysql-SQL-PHP-Laravel</div>
-                  </div>
-
-                  <div class="card303">
-                    <div class="card-header">
-                        <img src="img/martin.png" alt="">
-                    </div>
-                    <div class="card-body">Desarrollador front-end</div>
-                    <div class="card-footer">Html-css-javascript-boostrapt</div>
-                  </div>
-            </div>      
-            
-           
-        </section>
+      <div class="equipo">
+        <h3>Equipo Detrás de Thomy</h3>
+        <p>Nuestro dedicado equipo de profesionales en salud mental, desarrolladores y diseñadores se unió para crear Thomy con el objetivo de hacer que el apoyo emocional sea accesible para todos.</p>
+      </div>
     </div>
+  </section>
 
-    <footer class="footer-footer">
+
+    <section id="servicios">
+        <div class="container-fluid" id="Categoria">
+            <h2>Servicios</h2>
+        </div>
+        <div  id="parrafo" class="container-fluid">
+            <p>Nosotros tenemos los mejores servicios de asistencia virtual</p>
+        </div>
+        
+        
+        <div class="tarjetas container-fluid">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/chat-flatline.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chatbot Thomy</h5>
+                  <p class="card-text">Mejor Asistente virtual.</p>
+                  <a href="#" class="btn btn-primary">usalo ahora</a>
+                </div>
+              </div>
+            
+              <div class="card" style="width: 18rem;">
+                <img src="img/yoga-two-color.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ejercicios de meditación</h5>
+                  <p class="card-text">Utiliza nuestros servicios de meditacion en linea.</p>
+                  <a href="#" class="btn btn-primary">usalo ahora</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="img/mobile-testing-isometric.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Foros generales</h5>
+                  <p class="card-text">Consulta y interactua con las demas personas.</p>
+                  <a href="#" class="btn btn-primary">usalo ahora</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="img/calendar-two-color.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Agenda tu cita</h5>
+                  <p class="card-text">Atención psicologica con personal real especializado.</p>
+                  <a href="#" class="btn btn-primary">usalo ahora</a>
+                </div>
+              </div>
+
+             
+        </div>
+    </section>
+
+    <section id="quienes-somos" class="quienes-somos container-fluid">
+        <div id="Categoria container-fluid">
+            <p>¿Quienes somos?</p>
+            <h2>¡Bienvenidos a nuestro gran proyecto!</h2>
+        </div>
+        
+        <div class="contenido container-fluid " >
+            <p >Somos un apasionado grupo de estudiantes dedicados al fascinante mundo de las tecnologías, con un enfoque especial en el desarrollo de software. Nuestra misión es impulsar la innovación y facilitar la vida cotidiana a través de soluciones tecnológicas inteligentes.
+            </p>
+        </div>
+        
+        <div class="tarjetas">
+            <div class="card101">
+                <div class="card-header">
+                    <img src="img/pedro.jpeg" alt="">
+                </div>
+                <div class="card-body">Desarrollador front-end</div>
+                <div class="card-footer"><ul><li>Html-css-javascript-boostrapt</li>
+                   </ul></div>
+              </div>
+
+              <div class="card202">
+                <div class="card-header">
+                    <img src="img/santiago.png" alt="">
+                </div>
+                <div class="card-body">Desarrollador back-end</div>
+                <div class="card-footer">Mysql-SQL-PHP-Laravel</div>
+              </div>
+
+              <div class="card303">
+                <div class="card-header">
+                    <img src="img/martin.png" alt="">
+                </div>
+                <div class="card-body">Desarrollador front-end</div>
+                <div class="card-footer">Html-css-javascript-boostrapt</div>
+              </div>
+        </div>      
+        
+       
+    </section>
+   </main>
+       
+
+
+    <footer id="Contacto" class="footer-footer">
         <div class="principal">
             <div class="div-primero">
                 <div class="footer">

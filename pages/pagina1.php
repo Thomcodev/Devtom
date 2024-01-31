@@ -7,7 +7,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
    
-    <link rel="shortcut icon" href="../img/1-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <script src="../js/pagina1.js"></script>
     <title>Asistente Virtual, Thómas</title>
 
@@ -40,37 +43,37 @@
 </head>
 <body>
     
-        <header class="header">
-            <div class="menu " >
-            <a  href="#"><img src="../img/logo_tomy.png" alt="thómas, aistente virtual" class="logo-header"></a>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#about">Acerca de</a></li>
-                        <li><a href="#contacts">Contacto</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="#test">Test</a></li>
-                        <li><a href="../chatbot/bot.php">Chatbot</a></li>
-                        <li><a href="../pages/tuPsicologo.php">Tu psicologo en linea</a></li>
+<header class="header">
+        <nav class="navbar navbar-expand-md justify-content-center fixed-top bg-white navbar-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/logotipo.png" alt="thómas, asistente virtual" class="logo-header"></a>
+                
+                <button class="navbar-toggler color-black" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav ">
+                    <li class="nav-item"><a href="#slider" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">Acerca de</a></li>
+                        <li class="nav-item"><a href="#Contacto" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#test" class="nav-link">Test</a></li>
+                        <li class="nav-item"><a href="../chatbot/bot.php" class="nav-link">Chatbot</a></li>
+                        <li class="nav-item"><a href="../pages/tuPsicologo.php" class="nav-link">Tu psicologo en linea</a></li>
                     </ul>
-                </nav>
-               
-                <div class="socials-1">
-                <a href="../pages/index.html" class="icono-salida"><img src="../img/salida.png" alt="Cerrar sesión"></a>
-                    <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt=""></a>
                 </div>
-            </div> 
-        </header>
+            </div>
+        </nav>
+        
+    </header>
+
 
         <main>
 
         <div id="slider">
             <img src="../img/Banner_pedro.jpg" alt="Desarrollador del proyecto Thómas">
-  <img src="../img/banner_1.jpg" alt="Frase motivadora con paisaje de fondo">
-  
-</div>
+        </div>
 
          <section class="about" id="about">
             <div class="about-content container">
@@ -98,7 +101,7 @@
                 </div>
 
                 <div class="marco-redondo">
-  <img src="../img/thomas.jpg" alt="Fotografía">
+  <img src="../img/pedro.jpeg" alt="Fotografía">
 </div>
 
 
@@ -169,25 +172,33 @@
 
 </main>
 
-      
+<footer id="Contacto" class="footer-footer">
+        <div class="principal">
+            <div class="div-primero">
+                <div class="footer">
+                    <img src="../img/logotipo.png" alt="Thómas, asistente virtual" class="logo-footer">
+                </div>
+                
+               
+            </div>
         
-       
+            <div class="socials-1">
+                <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt="LinkedIn"></a>
+            </div>
         
-       
+            <div id="frase">
+                <p>Gracias por ser parte de nuestro viaje.</p>
+            </div>
         
+            <div id="derechos">
+                <p>Todos los derechos reservados a Thomy_Asociados</p>
+            </div>
 
-    
-        <footer class="footer">
-        <div class="copyright">
-            &copy; 2023 Thómas
-            <p>Contáctanos: <a href="tel:+123456789">(+1) 234-567-89</a></p>
+
         </div>
-        
-        <div class="footer-socials">
-            <a href="https://www.instagram.com/thomas.checo/"><img src="../img/instagram.svg" alt="Perfil de Instagram de Thomas Checo"></a>
-            <a href="https://www.facebook.com/profile.php?id=100085543308468"><img src="../img/facebook.svg" alt="Perfil de facebook de Thomas Checo"></a>
-            <a href="https://www.linkedin.com/in/pachecop%C3%A9rez/"><img src="../img/linkedin.svg" alt="Perfil de linkedin de Thomas Checo"></a>
-        </div>
+       
     </footer>
     <script>
   var slider = document.getElementById("slider");
@@ -203,6 +214,6 @@
 
   setInterval(showNextImage, interval);
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
